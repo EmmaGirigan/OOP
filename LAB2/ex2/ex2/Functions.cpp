@@ -2,9 +2,9 @@
 #include "Student.h"
 
 int compareName(Student student1, Student student2) {
-	if (student1.getName() == student2.getName())
+	if (strcmp(student1.getName(), student2.getName())==0)
 		return 0;
-	return -1;
+	else return -1;
 }
 
 int compareMathGrade(Student student1, Student student2) {
