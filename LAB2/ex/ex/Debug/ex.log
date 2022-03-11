@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\emmag\source\repos\OOP\LAB2\ex\ex\main.cpp(4,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  ex.vcxproj -> C:\Users\emmag\source\repos\OOP\LAB2\ex\Debug\ex.exe
