@@ -1,23 +1,42 @@
 #pragma once
 #include "Student.h"
-class Student {
-	char name[40];
-	float mathGrade;
-	float englishGrade;
-	float historyGrade;
+#include <iostream>
 
-public:
-	void setName(char studentName[40]);
-	char getName();
+void Student::setName(const char studentName[40]) {
+	strcpy_s(this->name, studentName);
+}
 
-	void setMathGrade(float grade);
-	float getMathGrade();
+char* Student::getName() {
+	return this->name;
+}
 
-	void setEnglishGrade(float grade);
-	float getEnglishGrade();
+void Student::setMathGrade(float grade) {
+	if (grade >= 1.0 && grade <= 10.0)
+		this->mathGrade = grade;
+}
 
-	void setHistoryGrade(float grade);
-	float getHistoryGrade();
+float Student::getMathGrade() {
+	return this->mathGrade;
+}
 
-	float averageGrade(float mathGrade, float englishGrade, float historyGrade);
-};
+void Student::setEnglishGrade(float grade) {
+	if (grade >= 1.0 && grade <= 10.0)
+		this->englishGrade = grade;
+}
+
+float Student::getEnglishGrade() {
+	return this->englishGrade;
+}
+
+void Student::setHistoryGrade(float grade) {
+	if (grade >= 1.0 && grade <= 10.0)
+		this->historyGrade = grade;
+}
+
+float Student::getHistoryGrade() {
+	return this->historyGrade;
+}
+
+float Student::averageGrade() {
+	return (this->mathGrade + this->englishGrade + this->historyGrade) / 3;
+}
