@@ -24,6 +24,6 @@ public:
 
     static int Add(int count, ...); // sums up a list of integers
 
-    static char* Add(const char*, const char*)
+    static char* Add(const char*, const char*);
 
 }
