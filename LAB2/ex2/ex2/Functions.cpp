@@ -1,5 +1,6 @@
 #include "Functions.h"
 #include "Student.h"
+#include <iostream>
 
 int compareName(Student student1, Student student2) {
 	if (strcmp(student1.getName(), student2.getName())==0)

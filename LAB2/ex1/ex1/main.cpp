@@ -1,4 +1,3 @@
-#include "NumberList.cpp"
 #include "NumberList.h"
 
 void main() {

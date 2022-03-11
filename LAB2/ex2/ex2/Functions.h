@@ -1,5 +1,4 @@
 #pragma once
-#include <iostream>
 #include "Student.h"
 
 int compareName(Student student1, Student student2);
